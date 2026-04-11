@@ -21,7 +21,5 @@ The efficiency was **low** because the overhead of creating multiple processes, 
 ### 4. What bottleneck did profiling reveal?
 Profiling revealed that the main bottleneck was the loop inside the `compute_sum` function, where each element is processed sequentially, leading to high computation time.
 
----
-
 ### 5. How did optimization affect performance?
 The optimization slightly improved code readability but did not significantly improve performance. In fact, the optimized version (**0.84 seconds**) was still slower than the original sequential version, likely due to generator expression overhead.
